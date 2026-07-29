@@ -4,10 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Enrollment</title>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 
 <body>
+
+    <header>
+        <h1>Course Enrollment</h1>
+
+        <form>
+
+            <label>Student ID</label><br>
+            <input type="text" value="2510990158" readonly><br><br>
+
+            <label>Student Name</label><br>
+            <input type="text" value="Navneet Kataria" readonly><br><br>
+
+            <label>Department</label><br>
+            <input type="text" value="Computer Science Engineering" readonly><br><br>
+
+            <label>Semester</label><br>
+            <input type="number" value="3" readonly><br><br>
+
+            <label>Academic Year</label><br>
+            <input type="text" value="2026-2027" readonly><br><br>
+
+            <label>Select Course</label><br>
+            <select required>
+                <option value="">Select a Course</option>
+                <option>Data Structures</option>
+                <option>Operating Systems</option>
+                <option>Database Management System</option>
+                <option>Front End Engineering</option>
+                <option>Object Oriented Programming</option>
+            </select><br><br>
+
+            <label>Course Code</label><br>
+            <input type="text" placeholder="Enter Course Code"><br><br>
+
+            <label>Faculty Name</label><br>
+            <input type="text" placeholder="Enter Faculty Name"><br><br>
+
+            <label>Section</label><br>
+            <select required>
+                <option value="">Select Section</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select><br><br>
+
+            <label>Credits</label><br>
+            <input type="number" placeholder="Enter Credits"><br><br>
+
+            <label>Mode of Study</label><br>
+            <input type="radio" name="mode"> Online
+            <input type="radio" name="mode"> Offline
+            <br><br>
+
+            <label>Enrollment Date</label><br>
+            <input type="date"><br><br>
+
+            <input type="checkbox" required>
+            <label>I agree to the enrollment policy.</label>
+            <br><br>
+
+            <input type="submit" value="Enroll Now">
+            <input type="reset" value="Reset">
+
+        </form>
+
+        <h3>Enrollment Status: Not Enrolled</h3>
+
+    </header>
 
 </body>
 
