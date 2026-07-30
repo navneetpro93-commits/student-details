@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe, #93c5fd);
+    padding: 40px;
+}
+
+header,
+article {
+    width: 1000px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h4 {
+    color: #374151;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    background: #2563eb;
+    color: white;
+    padding: 14px;
+    font-size: 17px;
+}
+
+td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #d1d5db;
+    transition: 0.3s;
+}
+
+tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+tr:hover td {
+    background: #dbeafe;
+}
+
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+select:focus,
+input[type="date"]:focus {
+    border-color: #2563eb;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #374151;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    margin-left: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 15px;
+}
+
+input[type="submit"] {
+    background: #2563eb;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+input[type="reset"] {
+    background: #ef4444;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background: #dc2626;
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    body {
+        padding: 15px;
+    }
+    header,
+    article {
+        width: 100%;
+        overflow-x: auto;
+    }
+    table {
+        min-width: 700px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
